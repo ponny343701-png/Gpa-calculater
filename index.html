@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Percent to GPA Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Percent → 4.0 GPA Converter</h1>
+  <p class="description">Enter your percentage (0‑100) and convert it to a GPA on the 4.0 scale.</p>
+
+  <div class="container">
+    <div class="input-group">
+      <label for="percentInput">Your percentage</label>
+      <input type="number" id="percentInput" placeholder="e.g. 87.5" min="0" max="100" step="0.01">
+    </div>
+    <button class="button" id="convertBtn">Convert to GPA</button>
+
+    <div id="errorMsg" class="error" style="display:none;"></div>
+
+    <div id="resultDiv" class="result-box" style="display:none;">
+      Your GPA (4.0 scale): <span id="gpaOutput">0.00</span>
+    </div>
+  </div>
+
+  <div class="info">
+    <p>Here are some sample colleges & typical GPA expectations (on the 4.0 scale):</p>
+    <ul class="college-list">
+      <li>University of Richmond – incoming freshmen middle GPA ~ 3.82–4.00</li>
+      <li>Hillsdale College – admitted students average ~ 3.93 GPA</li>
+      <li>University of California, Davis – average incoming ~ 4.0+ weighted GPA</li>
+      <li>University of Iowa – minimum GPA ~ 3.0 for many graduate admissions</li>
+      <li>University of Washington – median high‑school GPA for admitted freshman ~ 3.82</li>
+      <li>UC system – minimum GPA: 3.0 for A‑G courses</li>
+      <li>Appily guide – many colleges accept students with ~ 3.4+</li>
+      <li>EducationConnection – some colleges accept GPAs ~2.5</li>
+      <li>Illinois Graduate College – minimum GPA ~3.0</li>
+      <li>College guide – typical unweighted GPA ~3.0+</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
